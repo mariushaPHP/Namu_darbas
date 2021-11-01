@@ -5,12 +5,15 @@ header{
     background: url(../img/baloon.jpg) no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 800px;
+    height: 100%;
     padding-top: 30px;
-    .row{
+    .logo_naw{
       .col-4{
         display: flex;
         justify-content: center;
+        image{
+          height: 100px;
+        }
       }
       .col-8{
         display: flex;
@@ -28,11 +31,11 @@ header{
                 text-decoration: none;
                 font-size: 0.7rem;
                 color: white;
-              }
-              a:hover{
-                color: red;
-                border-bottom: 1px solid red;
-                padding-bottom: 15px;
+                &:hover{
+                  color: red;
+                  border-bottom: 1px solid red;
+                  padding-bottom: 15px;
+                }
               }
             }
           }
@@ -52,50 +55,43 @@ header{
       i{
         color: rgb(139, 137, 137);
         font-size: 2rem;
-      }
-      i:hover{
-        color: red;
+        &:hover{
+          color: red;
+        }
       }
       .slide{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include alignment_column;
         color: white;
-        //text-align: center;
-
-
-          h1{
-            font-size: 3rem;
-
-          }
-          p{
+        margin: 100px 0;
+        h1{
+          font-size: 3rem;
+          text-align: center;
+        }
+        p{
+          font-size: 0.7rem;
+          width: 50%;
+          text-align: center;
+        }
+        .bt{
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          button{
+            color: white;
             font-size: 0.7rem;
-            width: 50%;
-            text-align: center;
-          }
-          .bt{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-
-            button{
-              color: white;
-              font-size: 0.7rem;
-              text-decoration: none;
-              margin: 20px;
-              border: 1px solid white;
-              border-radius: 3px;
-              background: none;
-              width: 150px;
-              height: 40px;
-            }
-            button:hover{
+            text-decoration: none;
+            margin: 20px;
+            border: 1px solid white;
+            border-radius: 3px;
+            background: none;
+            width: 150px;
+            height: 40px;
+            &:hover{
               background: red;
               border: none;
             }
           }
-
+        }
       }
     }
   }
@@ -105,17 +101,14 @@ main{
 
   .present{
     width: 100%;
-    height: 400px;
+    height: 100%;
     background: white;
     display: flex;
     align-items: center;
     .container{
       padding: 40px;
       .col{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include alignment_column;
         .box{
           width: 50px;
           height: 50px;
@@ -156,7 +149,7 @@ main{
   .our_history{
     background-color: white;
     width: 100%;
-    height: 400px;
+    height: 100%;
     display: flex;
     align-items: center;
     .pc{
@@ -182,9 +175,9 @@ main{
         background: red;
         width: 150px;
         height: 40px;
-      }
-      button:hover{
-        box-shadow: 3px 3px 10px black;
+        &:hover{
+          box-shadow: 3px 3px 10px black;
+        }
       }
     }
   }
@@ -227,6 +220,7 @@ main{
         border: 4px solid rgba(0, 0, 0, 0.16);
         margin: 0 auto;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         i{
@@ -239,15 +233,16 @@ main{
     background-color: white;
     width: 100%;
     .col{
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
+
+      @include alignment_column;
       h3{
         margin-top: 60px;
+
       }
       p{
         font-size: 0.7rem;
+        text-align: center;
+        width: 80%;
       }
       .menu{
         display: flex;
@@ -258,10 +253,10 @@ main{
           text-decoration: none;
           font-size: 0.7rem;
           padding: 0 20px;
-        }
-        a:hover{
-          color: red;
-          font-weight: 900;
+          &:hover{
+            color: red;
+            font-weight: 900;
+          }
         }
       }
     }
@@ -303,15 +298,14 @@ main{
     background-color: #e9edf6;
     width: 100%;
     .header{
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
+      @include alignment_column;
       h3{
         margin-top: 60px;
       }
       p{
         font-size: 0.7rem;
+        text-align: center;
+        width: 80%;
       }
     }
     .ideas{
@@ -327,9 +321,7 @@ main{
         top: 30px;
         z-index: 2;
         box-shadow: 1px 1px 15px #7e7a7a;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        @include alignment_column;
         padding: 40px;
         .box{
           width: 50px;
@@ -363,9 +355,9 @@ main{
           background: red;
           width: 150px;
           height: 40px;
-        }
-        button:hover{
-          box-shadow: 3px 3px 10px black;
+          &:hover{
+            box-shadow: 3px 3px 10px black;
+          }
         }
         .point{
           display: flex;
@@ -399,10 +391,7 @@ main{
       margin: auto 0;
       .col-2{
         z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include alignment_column;
         color: white;
         p{
           font-size: 0.7rem;
@@ -422,14 +411,14 @@ main{
   .our_pricing{
     .header{
       width: 200px;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
+      @include alignment_column;
       h3{
         margin-top: 60px;
       }
       p{
         font-size: 0.7rem;
+        text-align: center;
+        width: 80%;
       }
     }
     .price{
@@ -438,11 +427,8 @@ main{
       margin: 40px;
       .cont{
         position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include alignment_column;
         justify-content: space-between;
-        //width: 280px;
         height: 450px;
         min-width: 280px;
         background: #e2e3e5;
@@ -477,9 +463,9 @@ main{
           background: red;
           width: 150px;
           height: 40px;
-        }
-        button:hover{
-          box-shadow: 3px 3px 10px black;
+          &:hover{
+            box-shadow: 3px 3px 10px black;
+          }
         }
         .circle{
           position: absolute;
@@ -491,10 +477,7 @@ main{
           border-radius: 50%;
           border: 8px solid rgba(166, 163, 163, 0.16);
           margin: 0 auto;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+          @include alignment_column;
 
           h3{
             color: grey;
@@ -510,16 +493,17 @@ main{
     .container{
       margin: 60px;
       .header{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+        @include alignment_column;
         margin-bottom: 60px;
         h3{
           margin-top: 60px;
+          text-align: center;
+          width: 80%;
         }
         p{
           font-size: 0.7rem;
+          text-align: center;
+          width: 80%;
         }
       }
       .logo_container{
@@ -546,16 +530,15 @@ main{
     .container-fluid{
 
       .header{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+        @include alignment_column;
         margin-bottom: 60px;
         h3{
           margin-top: 60px;
         }
         p{
           font-size: 0.7rem;
+          text-align: center;
+          width: 80%;
         }
       }
       .col-3{
@@ -595,16 +578,15 @@ main{
     .container{
 
       .header{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+        @include alignment_column;
         margin-bottom: 60px;
         h3{
           margin-top: 60px;
         }
         p{
           font-size: 0.7rem;
+          width: 80%;
+          text-align: center;
         }
       }
       .contacts{
@@ -655,9 +637,9 @@ main{
             background: red;
             width: 150px;
             height: 40px;
-          }
-          button:hover{
-            box-shadow: 3px 3px 10px black;
+            &:hover{
+              box-shadow: 3px 3px 10px black;
+            }
           }
         }
       }
@@ -672,10 +654,7 @@ footer{
     height: 300px;
     //z-index: 1;
     .header{
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
+      @include alignment_column;
       margin-bottom: 60px;
       color: white;
       h3{
@@ -694,9 +673,9 @@ footer{
         background: red;
         width: 150px;
         height: 40px;
-      }
-      button:hover{
-        box-shadow: 3px 3px 10px black;
+        &:hover{
+          box-shadow: 3px 3px 10px black;
+        }
       }
     }
   }
@@ -756,8 +735,86 @@ footer{
   .contacts{
     display: flex;
     flex-direction: column;
+    .address{
+      width: 100%;
+      background: red;
+    }
     .reg{
       width: 300px;
+    }
+  }
+
+  .case_study{
+    .ideas{
+      .slide{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+      .foto{
+        display: none;
+      }
+    }
+  }
+
+  header{
+    .container-fluid{
+      .logo_naw{
+        .col-4{
+          width: 40%;
+          margin-left: 40px;
+        }
+        .col-8{
+          width: 40%;
+          nav{
+
+            ul{
+              display: none;
+            }
+            .dropdown{
+              position: relative;
+              display: inline-block;
+              .menu_button{
+                @include alignment_column;
+                justify-content: space-evenly;
+                width: 50px;
+                height: 50px;
+                background: none;
+                border: 1px solid white;
+                border-radius: 3px;
+                div{
+                  border: 1px solid white;
+                  border-radius: 3px;
+                  width: 80%;
+                }
+
+                &:hover{
+                  .dropdown-content{
+                    display: block;
+                  }
+                }
+              }
+              .dropdown-content {
+                display: none;
+                position: absolute;
+                background: none;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+              }
+            }
+          }
+        }
+      }
+      .info{
+      padding: 10px;
+        .col-10{
+          p{
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }

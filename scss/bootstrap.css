@@ -11122,33 +11122,36 @@ header .container-fluid, header .container-sm, header .container-md, header .con
   background: url(../img/baloon.jpg) no-repeat center center;
   background-size: cover;
   width: 100%;
-  height: 800px;
+  height: 100%;
   padding-top: 30px;
 }
-header .container-fluid .row .col-4, header .container-sm .row .col-4, header .container-md .row .col-4, header .container-lg .row .col-4, header .container-xl .row .col-4, header .container-xxl .row .col-4 {
+header .container-fluid .logo_naw .col-4, header .container-sm .logo_naw .col-4, header .container-md .logo_naw .col-4, header .container-lg .logo_naw .col-4, header .container-xl .logo_naw .col-4, header .container-xxl .logo_naw .col-4 {
   display: flex;
   justify-content: center;
 }
-header .container-fluid .row .col-8, header .container-sm .row .col-8, header .container-md .row .col-8, header .container-lg .row .col-8, header .container-xl .row .col-8, header .container-xxl .row .col-8 {
+header .container-fluid .logo_naw .col-4 image, header .container-sm .logo_naw .col-4 image, header .container-md .logo_naw .col-4 image, header .container-lg .logo_naw .col-4 image, header .container-xl .logo_naw .col-4 image, header .container-xxl .logo_naw .col-4 image {
+  height: 100px;
+}
+header .container-fluid .logo_naw .col-8, header .container-sm .logo_naw .col-8, header .container-md .logo_naw .col-8, header .container-lg .logo_naw .col-8, header .container-xl .logo_naw .col-8, header .container-xxl .logo_naw .col-8 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .container-fluid .row .col-8 nav ul, header .container-sm .row .col-8 nav ul, header .container-md .row .col-8 nav ul, header .container-lg .row .col-8 nav ul, header .container-xl .row .col-8 nav ul, header .container-xxl .row .col-8 nav ul {
+header .container-fluid .logo_naw .col-8 nav ul, header .container-sm .logo_naw .col-8 nav ul, header .container-md .logo_naw .col-8 nav ul, header .container-lg .logo_naw .col-8 nav ul, header .container-xl .logo_naw .col-8 nav ul, header .container-xxl .logo_naw .col-8 nav ul {
   margin: 0;
   padding: 0;
 }
-header .container-fluid .row .col-8 nav ul li, header .container-sm .row .col-8 nav ul li, header .container-md .row .col-8 nav ul li, header .container-lg .row .col-8 nav ul li, header .container-xl .row .col-8 nav ul li, header .container-xxl .row .col-8 nav ul li {
+header .container-fluid .logo_naw .col-8 nav ul li, header .container-sm .logo_naw .col-8 nav ul li, header .container-md .logo_naw .col-8 nav ul li, header .container-lg .logo_naw .col-8 nav ul li, header .container-xl .logo_naw .col-8 nav ul li, header .container-xxl .logo_naw .col-8 nav ul li {
   list-style-type: none;
   display: inline;
   margin: 20px;
 }
-header .container-fluid .row .col-8 nav ul li a, header .container-sm .row .col-8 nav ul li a, header .container-md .row .col-8 nav ul li a, header .container-lg .row .col-8 nav ul li a, header .container-xl .row .col-8 nav ul li a, header .container-xxl .row .col-8 nav ul li a {
+header .container-fluid .logo_naw .col-8 nav ul li a, header .container-sm .logo_naw .col-8 nav ul li a, header .container-md .logo_naw .col-8 nav ul li a, header .container-lg .logo_naw .col-8 nav ul li a, header .container-xl .logo_naw .col-8 nav ul li a, header .container-xxl .logo_naw .col-8 nav ul li a {
   text-decoration: none;
   font-size: 0.7rem;
   color: white;
 }
-header .container-fluid .row .col-8 nav ul li a:hover, header .container-sm .row .col-8 nav ul li a:hover, header .container-md .row .col-8 nav ul li a:hover, header .container-lg .row .col-8 nav ul li a:hover, header .container-xl .row .col-8 nav ul li a:hover, header .container-xxl .row .col-8 nav ul li a:hover {
+header .container-fluid .logo_naw .col-8 nav ul li a:hover, header .container-sm .logo_naw .col-8 nav ul li a:hover, header .container-md .logo_naw .col-8 nav ul li a:hover, header .container-lg .logo_naw .col-8 nav ul li a:hover, header .container-xl .logo_naw .col-8 nav ul li a:hover, header .container-xxl .logo_naw .col-8 nav ul li a:hover {
   color: red;
   border-bottom: 1px solid red;
   padding-bottom: 15px;
@@ -11173,12 +11176,14 @@ header .container-fluid .info i:hover, header .container-sm .info i:hover, heade
 header .container-fluid .info .slide, header .container-sm .info .slide, header .container-md .info .slide, header .container-lg .info .slide, header .container-xl .info .slide, header .container-xxl .info .slide {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: white;
+  margin: 100px 0;
 }
 header .container-fluid .info .slide h1, header .container-sm .info .slide h1, header .container-md .info .slide h1, header .container-lg .info .slide h1, header .container-xl .info .slide h1, header .container-xxl .info .slide h1, header .container-fluid .info .slide .h1, header .container-sm .info .slide .h1, header .container-md .info .slide .h1, header .container-lg .info .slide .h1, header .container-xl .info .slide .h1, header .container-xxl .info .slide .h1 {
   font-size: 3rem;
+  text-align: center;
 }
 header .container-fluid .info .slide p, header .container-sm .info .slide p, header .container-md .info .slide p, header .container-lg .info .slide p, header .container-xl .info .slide p, header .container-xxl .info .slide p {
   font-size: 0.7rem;
@@ -11208,7 +11213,7 @@ header .container-fluid .info .slide .bt button:hover, header .container-sm .inf
 
 main .present {
   width: 100%;
-  height: 400px;
+  height: 100%;
   background: white;
   display: flex;
   align-items: center;
@@ -11257,7 +11262,7 @@ main .present .container .col:hover h6, main .present .container .col:hover .h6 
 main .our_history {
   background-color: white;
   width: 100%;
-  height: 400px;
+  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -11328,6 +11333,7 @@ main .our_services .col-1 .circle {
   border: 4px solid rgba(0, 0, 0, 0.16);
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -11340,8 +11346,8 @@ main .recent_works {
 }
 main .recent_works .col {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 main .recent_works .col h3, main .recent_works .col .h3 {
@@ -11349,6 +11355,8 @@ main .recent_works .col h3, main .recent_works .col .h3 {
 }
 main .recent_works .col p {
   font-size: 0.7rem;
+  text-align: center;
+  width: 80%;
 }
 main .recent_works .col .menu {
   display: flex;
@@ -11402,8 +11410,8 @@ main .case_study {
 }
 main .case_study .header {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 main .case_study .header h3, main .case_study .header .h3 {
@@ -11411,6 +11419,8 @@ main .case_study .header h3, main .case_study .header .h3 {
 }
 main .case_study .header p {
   font-size: 0.7rem;
+  text-align: center;
+  width: 80%;
 }
 main .case_study .ideas {
   margin: 40px;
@@ -11427,8 +11437,9 @@ main .case_study .ideas .slide {
   z-index: 2;
   box-shadow: 1px 1px 15px #7e7a7a;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 40px;
 }
 main .case_study .ideas .slide .box {
@@ -11519,14 +11530,17 @@ main .favorite .container .col-2 div {
 main .our_pricing .header {
   width: 200px;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 main .our_pricing .header h3, main .our_pricing .header .h3 {
   margin-top: 60px;
 }
 main .our_pricing .header p {
   font-size: 0.7rem;
+  text-align: center;
+  width: 80%;
 }
 main .our_pricing .price {
   display: flex;
@@ -11537,6 +11551,7 @@ main .our_pricing .price .cont {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   justify-content: space-between;
   height: 450px;
@@ -11604,16 +11619,20 @@ main .integrations .container {
 }
 main .integrations .container .header {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-bottom: 60px;
 }
 main .integrations .container .header h3, main .integrations .container .header .h3 {
   margin-top: 60px;
+  text-align: center;
+  width: 80%;
 }
 main .integrations .container .header p {
   font-size: 0.7rem;
+  text-align: center;
+  width: 80%;
 }
 main .integrations .container .logo_container {
   display: flex;
@@ -11635,8 +11654,8 @@ main .our_blog {
 }
 main .our_blog .container-fluid .header, main .our_blog .container-sm .header, main .our_blog .container-md .header, main .our_blog .container-lg .header, main .our_blog .container-xl .header, main .our_blog .container-xxl .header {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-bottom: 60px;
 }
@@ -11645,6 +11664,8 @@ main .our_blog .container-fluid .header h3, main .our_blog .container-sm .header
 }
 main .our_blog .container-fluid .header p, main .our_blog .container-sm .header p, main .our_blog .container-md .header p, main .our_blog .container-lg .header p, main .our_blog .container-xl .header p, main .our_blog .container-xxl .header p {
   font-size: 0.7rem;
+  text-align: center;
+  width: 80%;
 }
 main .our_blog .container-fluid .col-3, main .our_blog .container-sm .col-3, main .our_blog .container-md .col-3, main .our_blog .container-lg .col-3, main .our_blog .container-xl .col-3, main .our_blog .container-xxl .col-3 {
   padding: 0;
@@ -11681,8 +11702,8 @@ main .keep_in_touch {
 }
 main .keep_in_touch .container .header {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-bottom: 60px;
 }
@@ -11691,6 +11712,8 @@ main .keep_in_touch .container .header h3, main .keep_in_touch .container .heade
 }
 main .keep_in_touch .container .header p {
   font-size: 0.7rem;
+  width: 80%;
+  text-align: center;
 }
 main .keep_in_touch .container .contacts {
   display: flex;
@@ -11754,8 +11777,8 @@ footer .container-fluid, footer .container-sm, footer .container-md, footer .con
 }
 footer .container-fluid .header, footer .container-sm .header, footer .container-md .header, footer .container-lg .header, footer .container-xl .header, footer .container-xxl .header {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-bottom: 60px;
   color: white;
@@ -11835,8 +11858,71 @@ footer .container-fluid-link div p {
     display: flex;
     flex-direction: column;
   }
+  .contacts .address {
+    width: 100%;
+    background: red;
+  }
   .contacts .reg {
     width: 300px;
+  }
+
+  .case_study .ideas .slide {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .case_study .ideas .foto {
+    display: none;
+  }
+
+  header .container-fluid .logo_naw .col-4, header .container-sm .logo_naw .col-4, header .container-md .logo_naw .col-4, header .container-lg .logo_naw .col-4, header .container-xl .logo_naw .col-4, header .container-xxl .logo_naw .col-4 {
+    width: 40%;
+    margin-left: 40px;
+  }
+  header .container-fluid .logo_naw .col-8, header .container-sm .logo_naw .col-8, header .container-md .logo_naw .col-8, header .container-lg .logo_naw .col-8, header .container-xl .logo_naw .col-8, header .container-xxl .logo_naw .col-8 {
+    width: 40%;
+  }
+  header .container-fluid .logo_naw .col-8 nav ul, header .container-sm .logo_naw .col-8 nav ul, header .container-md .logo_naw .col-8 nav ul, header .container-lg .logo_naw .col-8 nav ul, header .container-xl .logo_naw .col-8 nav ul, header .container-xxl .logo_naw .col-8 nav ul {
+    display: none;
+  }
+  header .container-fluid .logo_naw .col-8 nav .dropdown, header .container-sm .logo_naw .col-8 nav .dropdown, header .container-md .logo_naw .col-8 nav .dropdown, header .container-lg .logo_naw .col-8 nav .dropdown, header .container-xl .logo_naw .col-8 nav .dropdown, header .container-xxl .logo_naw .col-8 nav .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  header .container-fluid .logo_naw .col-8 nav .dropdown .menu_button, header .container-sm .logo_naw .col-8 nav .dropdown .menu_button, header .container-md .logo_naw .col-8 nav .dropdown .menu_button, header .container-lg .logo_naw .col-8 nav .dropdown .menu_button, header .container-xl .logo_naw .col-8 nav .dropdown .menu_button, header .container-xxl .logo_naw .col-8 nav .dropdown .menu_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 3px;
+  }
+  header .container-fluid .logo_naw .col-8 nav .dropdown .menu_button div, header .container-sm .logo_naw .col-8 nav .dropdown .menu_button div, header .container-md .logo_naw .col-8 nav .dropdown .menu_button div, header .container-lg .logo_naw .col-8 nav .dropdown .menu_button div, header .container-xl .logo_naw .col-8 nav .dropdown .menu_button div, header .container-xxl .logo_naw .col-8 nav .dropdown .menu_button div {
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 80%;
+  }
+  header .container-fluid .logo_naw .col-8 nav .dropdown .menu_button:hover .dropdown-content, header .container-sm .logo_naw .col-8 nav .dropdown .menu_button:hover .dropdown-content, header .container-md .logo_naw .col-8 nav .dropdown .menu_button:hover .dropdown-content, header .container-lg .logo_naw .col-8 nav .dropdown .menu_button:hover .dropdown-content, header .container-xl .logo_naw .col-8 nav .dropdown .menu_button:hover .dropdown-content, header .container-xxl .logo_naw .col-8 nav .dropdown .menu_button:hover .dropdown-content {
+    display: block;
+  }
+  header .container-fluid .logo_naw .col-8 nav .dropdown .dropdown-content, header .container-sm .logo_naw .col-8 nav .dropdown .dropdown-content, header .container-md .logo_naw .col-8 nav .dropdown .dropdown-content, header .container-lg .logo_naw .col-8 nav .dropdown .dropdown-content, header .container-xl .logo_naw .col-8 nav .dropdown .dropdown-content, header .container-xxl .logo_naw .col-8 nav .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  header .container-fluid .info, header .container-sm .info, header .container-md .info, header .container-lg .info, header .container-xl .info, header .container-xxl .info {
+    padding: 10px;
+  }
+  header .container-fluid .info .col-10 p, header .container-sm .info .col-10 p, header .container-md .info .col-10 p, header .container-lg .info .col-10 p, header .container-xl .info .col-10 p, header .container-xxl .info .col-10 p {
+    width: 100%;
   }
 }
 
